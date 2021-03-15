@@ -1,0 +1,40 @@
+<mat-card style="max-width: 100vw;">
+    <h1 class="mat-display-3" style="margin-bottom: 0; text-align: center;">About</h1>
+</mat-card>
+<mat-grid-list [cols]="dynamicCol" [gutterSize]="dynamicGutter" [rowHeight]="dynamicRow">
+    <mat-grid-tile>
+        <mat-card class="content" >
+            <mat-card-header>
+                <mat-card-title>The Mission</mat-card-title>
+            </mat-card-header>
+            <img mat-card-image src="assets/ariel view gym.jpg" alt="">
+            <mat-card-content>
+                <p>
+                    We strive to aide in the skills and development of children in surrounding cities and counties.
+                    Since 2015, we've been dedicated to training with children, ages five to nineteen, in areas involving ball handling,
+                    shooting form, speed, and coordination; while incorporating life lessons along the way.
+                </p>
+            </mat-card-content>
+        </mat-card>
+    </mat-grid-tile>
+    <mat-grid-tile>
+        <mat-card class="content">
+            <mat-card-header>
+                <mat-card-title>The Owner</mat-card-title>
+                <mat-card-subtitle>Tirrell Cumberland</mat-card-subtitle>
+            </mat-card-header>
+            <img mat-card-image src="assets/globetrotter article.jpg" alt="">
+            <mat-card-content>
+                <p>
+                    Tirrell is the owner and head trainer at TC3. Before starting his business, 
+                    he had his own success in basketball where he toured with the Harlem Globetrotters
+                    in 2013. In his college career, he played two season at Ohio Christian University,
+                    scoring 1,275 points and was a two-time NCCAA All American Player. Previous to playing
+                    at OCU, Cumberland played two seasons at Southern State Community College, scoring 1,583
+                    points and was an All American player there, as well. Tirrell graduated from Hillsboro High School
+                    and scored 1,150 in three seasons.
+                </p>
+            </mat-card-content>
+        </mat-card>
+    </mat-grid-tile>
+</mat-grid-list>

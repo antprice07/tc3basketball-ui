@@ -1,0 +1,26 @@
+h3 {
+  flex: 1 1 auto;
+  text-align: center;
+}
+
+.mat-list-item {
+  margin-right: 10px;
+}
+
+.mat-drawer-container {
+  height: 100%;
+}
+
+.drawer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media only screen and (min-width: 900px) {
+  .mat-drawer-content {
+    padding: 25px 75px 75px 75px;
+  }
+}
+
+
