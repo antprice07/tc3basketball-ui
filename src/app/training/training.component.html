@@ -1,1 +1,35 @@
-<p>training works!</p>
+<mat-card>
+  <h1 mat-headline>Basketball Training</h1>
+</mat-card>
+<mat-grid-list [cols]="dynamicColWidth" [rowHeight]="dynamicRowHeight" gutterSize="5px">
+    <mat-grid-tile>
+        <mat-card class="content">
+            <mat-card-title-group>
+                <mat-card-title>
+                    Private Training
+                </mat-card-title>
+            </mat-card-title-group>
+            <img mat-card-image src="assets/bball photo 8.jpg" alt="">
+            <mat-card-content>
+                There is no faster way to improve your game than private skills training.
+                A session lasts one hour and is pack with specific drills to fit each athlete's
+                individual needs to improve weaknesses and build upon strengths.
+            </mat-card-content>
+        </mat-card>
+    </mat-grid-tile>
+    <mat-grid-tile>
+        <mat-card class="content">
+            <mat-card-header>
+                <mat-card-title>
+                    Small Group Training
+                </mat-card-title>
+            </mat-card-header>
+            <img mat-card-image src="assets/bball photo 9.jpg" alt="">
+            <mat-card-content>
+                Small group training places 2-8 athletes of similar skill level together. 
+                Individual skills are still the focus, but a small group allows for competitive 
+                drills including both 1-on-1 and 2-on-2 game situations.
+            </mat-card-content>
+        </mat-card>
+    </mat-grid-tile>
+</mat-grid-list>

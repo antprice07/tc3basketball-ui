@@ -1,0 +1,35 @@
+h1 {
+  text-align: center;
+}
+.center {
+  position: relative;
+  top: 50px;
+  font-size: larger;
+  margin: auto;
+  width: 40%;
+  color: white;
+  background-color: rgba(0, 0, 255, 0.3);
+}
+
+.backgroundPicture {
+  background-image: url("../../assets/Dr dish ct.jpg");
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media only screen and (max-width: 650px) {
+  .center {
+    position: relative;
+    top: 20px;
+    margin: auto;
+    width: 90%;
+    color: white;
+    bottom: 50px;
+  }
+  .backgroundPicture {
+    background-image: url("../../assets/Dr dish ct.jpg");
+    height: 100%;
+    background-position: 50%;
+  }
+}

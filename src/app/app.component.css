@@ -1,15 +1,10 @@
-h3 {
-  flex: 1 1 auto;
-  text-align: center;
-}
-
 .mat-list-item {
   margin-right: 10px;
 }
 
-.mat-drawer-container {
-  height: 100%;
-}
+/* .mat-drawer-container {
+  height: 100vh;
+} */
 
 .drawer {
   display: flex;
@@ -20,6 +15,12 @@ h3 {
 @media only screen and (min-width: 900px) {
   .mat-drawer-content {
     padding: 25px 75px 75px 75px;
+  }
+  .toolbar {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    z-index: 1000;
   }
 }
 

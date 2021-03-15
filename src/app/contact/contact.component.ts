@@ -7,9 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContactComponent implements OnInit {
 
+  isDesktop = true;
+
   constructor() { }
 
   ngOnInit(): void {
+    this.isDesktop = window.innerWidth <= 650 ? false:true;
   }
 
 }

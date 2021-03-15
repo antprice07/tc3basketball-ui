@@ -16,7 +16,7 @@ export class AboutComponent implements OnInit {
 
   ngOnInit(): void {
     this.dynamicCol = this.styleSvc.colSize;
-    this.dynamicRow = window.innerWidth >= 650 ? '850px' : '600px';
+    this.dynamicRow = window.innerWidth >= 650 ? '90vh' : '600px';
     this.dynamicGutter = window.innerWidth >= 650 ? '8px' : '0';
   }
 

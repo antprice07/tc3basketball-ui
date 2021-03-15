@@ -1,27 +1,33 @@
 <mat-grid-list
   [cols]="dynamicColSize"
-  rowHeight="2:1"
+  [rowHeight]="dynamicRowHeight"
+  gutterSize="5px"
   (window:resize)="onResize($event)"
 >
   <mat-grid-tile>
-    <span>Shooting Machine</span>
-    <br>
-    <img src="assets/Dr dish ct.jpg" alt="" />
+    <mat-card [routerLink]="'/memberships'">
+      <mat-card-title-group>
+        <mat-card-title> Shooting Machine </mat-card-title>
+      </mat-card-title-group>
+      <img mat-card-image src="assets/Dr dish ct.jpg" alt="" />
+    </mat-card>
   </mat-grid-tile>
   <mat-grid-tile>
-    Hands-On Training
-    <br>
-    <img src="assets/bball photo 9.jpg" alt="" />
+    <mat-card [routerLink]="'/training'">
+      <mat-card-title> Hands-On Training </mat-card-title>
+      <img mat-card-image src="assets/IMG_20191217_170838_377.jpg" alt="" />
+    </mat-card>
   </mat-grid-tile>
   <mat-grid-tile>
-    Batting Cage
-    <br>
-    <img src="assets/cage 3.jpg" alt="" />
+    <mat-card [routerLink]="'/batting-cage'">
+      <mat-card-title> Batting Cage </mat-card-title>
+      <img mat-card-image src="assets/cage 3.jpg" alt="" />
+    </mat-card>
   </mat-grid-tile>
   <mat-grid-tile>
-    <p>
-      Hitting Nets
-    </p>
-    <img src="assets/cage 4.jpg" alt="" />
+    <mat-card [routerLink]="'/batting-cage'">
+      <mat-card-title> Hitting Nets </mat-card-title>
+      <img mat-card-image src="assets/cage 4.jpg" alt="" />
+    </mat-card>
   </mat-grid-tile>
 </mat-grid-list>

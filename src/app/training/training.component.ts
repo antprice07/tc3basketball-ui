@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { StyleService } from '../style.service';
 
 @Component({
   selector: 'app-training',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TrainingComponent implements OnInit {
 
-  constructor() { }
+  dynamicColWidth: number;
+  dynamicRowHeight: string;
+
+  constructor(private styleSvc: StyleService) { }
 
   ngOnInit(): void {
+    this.dynamicColWidth = this.styleSvc.colSize;
+    this.dynamicRowHeight = window.innerWidth <= 650 ? "60vh" : "80vh"
   }
 
 }

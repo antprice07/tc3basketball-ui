@@ -1,4 +1,16 @@
+.mat-card {
+    height: 95%;
+    width: 100%;
+}
 img {
     height: 90%;
-    width: 60%;
+}
+.mat-grid-tile {
+    cursor: pointer;
+    :hover {
+        border: 10px,solid,white;
+    }
+}
+.mat-card-title:hover {
+    text-decoration: underline;
 }
